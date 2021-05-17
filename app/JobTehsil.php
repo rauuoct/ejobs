@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+#good work
 class JobTehsil extends Model
 {
     protected $fillable = [
