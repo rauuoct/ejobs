@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+        <title>Filter-House HR System</title>
+        <link id="favicon" rel="shortcut icon" type="image/x-icon" href="http://127.0.0.1:8000/theme/img/logo/logo.png"/>
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/animate.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/font.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/js/fuelux/fuelux.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/js/slider/slider.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/js/calendar/bootstrap_calendar.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/app.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/js/datatables/datatables.css" type="text/css" />
+        <link rel="stylesheet" href="http://127.0.0.1:8000/notebook/js/datepicker/datepicker.css" type="text/css" />
+        <!--[if lt IE 9]>
+        <script src="http://127.0.0.1:8000/notebook/js/ie/html5shiv.js"></script>
+        <script src="http://127.0.0.1:8000/notebook/js/ie/respond.min.js"></script>
+        <script src="http://127.0.0.1:8000/notebook/js/ie/excanvas.js"></script>
+        <![endif]-->
+        <!-- Fonts -->
+
+    </head>
+    <body>
+        <section class="vbox">
+            <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+              <div class="navbar-header aside-md">
+                <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                  <i class="fa fa-bars"></i>
+                </a>
+                <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="http://127.0.0.1:8000/notebook/images/logo.png" class="m-r-sm">Filter-House</a>
+                <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
+                  <i class="fa fa-cog"></i>
+                </a>
+              </div>    
+              <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user">
+                <li class="hidden-xs">
+                  <a href="#" class="dropdown-toggle dk" data-toggle="dropdown">
+                    <i class="fa fa-bell"></i>
+                    <span class="badge badge-sm up bg-danger m-l-n-sm count">2</span>
+                  </a>
+                  <section class="dropdown-menu aside-xl">
+                    <section class="panel bg-white">
+                      <header class="panel-heading b-light bg-light">
+                        <strong>You have <span class="count">2</span> notifications</strong>
+                      </header>
+                      <div class="list-group list-group-alt animated fadeInRight">
+                        <a href="#" class="media list-group-item">
+                          <span class="pull-left thumb-sm">
+                            <img src="http://127.0.0.1:8000/notebook/images/avatar.jpg" alt="John said" class="img-circle">
+                          </span>
+                          <span class="media-body block m-b-none">
+                            Use awesome animate.css<br>
+                            <small class="text-muted">10 minutes ago</small>
+                          </span>
+                        </a>
+                        <a href="#" class="media list-group-item">
+                          <span class="media-body block m-b-none">
+                            1.0 initial released<br>
+                            <small class="text-muted">1 hour ago</small>
+                          </span>
+                        </a>
+                      </div>
+                      <footer class="panel-footer text-sm">
+                        <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                        <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                      </footer>
+                    </section>
+                  </section>
+                </li>
+                <li class="dropdown hidden-xs">
+                  <a href="#" class="dropdown-toggle dker" data-toggle="dropdown"><i class="fa fa-fw fa-search"></i></a>
+                  <section class="dropdown-menu aside-xl animated fadeInUp">
+                    <section class="panel bg-white">
+                      <form role="search">
+                        <div class="form-group wrapper m-b-none">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                              <button type="submit" class="btn btn-info btn-icon"><i class="fa fa-search"></i></button>
+                            </span>
+                          </div>
+                        </div>
+                      </form>
+                    </section>
+                  </section>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="thumb-sm avatar pull-left">
+                      <img src="http://127.0.0.1:8000/notebook/images/avatar.jpg">
+                    </span>
+                    John.Smith <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu animated fadeInRight">
+                    <span class="arrow top"></span>
+                    <li>
+                      <a href="#">Settings</a>
+                    </li>
+                    <li>
+                      <a href="profile.html">Profile</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="badge bg-danger pull-right">3</span>
+                        Notifications
+                      </a>
+                    </li>
+                    <li>
+                      <a href="docs.html">Help</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="http://127.0.0.1:8000/logout" >Logout</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>      
+            </header> 
+
+            
+
+	<section>
+     	<section class="hbox stretch">
+			<aside class="bg-dark lter aside-md hidden-print hidden-xs" id="nav">          
+                        <section class="vbox">
+                            <section class="w-f scrollable">
+                                <div class="slim-scroll" data-height="auto" data-disable-fade-out="true" data-distance="0" data-size="5px" data-color="#333333">
+                                    <!-- nav -->
+                                    <nav class="nav-primary hidden-xs">
+                                      <ul class="nav">
+                                        <li class="">
+                                            <a href="http://127.0.0.1:8000/home">
+                                                <i class="fa fa-dashboard icon">
+                                                    <b class="bg-danger"></b>
+                                                </i>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li class=" active ">
+                                            <a href="#">
+                                                <i class="fa fa-users icon">
+                                                    <b class="bg-warning"></b>
+                                                </i>
+                                                <span class="pull-right">
+                                                    <i class="fa fa-angle-down text"></i>
+                                                    <i class="fa fa-angle-up text-active"></i>
+                                                </span>
+                                                <span>Employee</span>
+                                            </a>
+                                          <ul class="nav lt">
+                                            <li class=" active ">
+                                              <a href="http://127.0.0.1:8000/addEmployee" >                                                        
+                                                <i class="fa fa-angle-right"></i>
+                                                <span>Add Employee</span>
+                                              </a>
+                                            </li>
+                                            <li class="">
+                                              <a href="http://127.0.0.1:8000/allEmployee" >                                                        
+                                                <i class="fa fa-angle-right"></i>
+                                                <span>All Employee(s)</span>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i class="fa fa-user-md icon">
+                                                    <b class="bg-success"></b>
+                                                </i>
+                                                <span class="pull-right">
+                                                    <i class="fa fa-angle-down text"></i>
+                                                    <i class="fa fa-angle-up text-active"></i>
+                                                </span>
+                                                <span>HR Management</span>
+                                            </a>
+                                            <ul class="nav lt">
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/allEmployeeHRProfile" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>All Employee HR Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/allCredits" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>All Credits</span>
+                                                    </a>
+                                                </li> 
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/getEarnings" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Earnings</span>
+                                                    </a>
+                                                </li> 
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/allLoan" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Loan</span>
+                                                    </a>
+                                                </li> 
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/allAdvance" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>Advance</span>
+                                                    </a>
+                                                </li> 
+                                                <li class="">
+                                                    <a href="http://127.0.0.1:8000/makeSalary" >                                                        
+                                                        <i class="fa fa-angle-right"></i>
+                                                        <span>SalarySlip</span>
+                                                    </a>
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                      </ul>
+                                    </nav>
+                                    <!-- / nav -->
+                                </div>
+                            </section>
+                            <footer class="footer lt hidden-xs b-t b-dark">
+                              <div id="chat" class="dropup">
+                                <section class="dropdown-menu on aside-md m-l-n">
+                                  <section class="panel bg-white">
+                                    <header class="panel-heading b-b b-light">Active chats</header>
+                                    <div class="panel-body animated fadeInRight">
+                                      <p class="text-sm">No active chats.</p>
+                                      <p><a href="#" class="btn btn-sm btn-default">Start a chat</a></p>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <div id="invite" class="dropup">                
+                                <section class="dropdown-menu on aside-md m-l-n">
+                                  <section class="panel bg-white">
+                                    <header class="panel-heading b-b b-light">
+                                      John <i class="fa fa-circle text-success"></i>
+                                    </header>
+                                    <div class="panel-body animated fadeInRight">
+                                      <p class="text-sm">No contacts in your lists.</p>
+                                      <p><a href="#" class="btn btn-sm btn-facebook"><i class="fa fa-fw fa-facebook"></i> Invite from Facebook</a></p>
+                                    </div>
+                                  </section>
+                                </section>
+                              </div>
+                              <a href="#nav" data-toggle="class:nav-xs" class="pull-right btn btn-sm btn-dark btn-icon">
+                                <i class="fa fa-angle-left text"></i>
+                                <i class="fa fa-angle-right text-active"></i>
+                              </a>
+                              <!--<div class="btn-group hidden-nav-xs">
+                                <button type="button" title="Chats" class="btn btn-icon btn-sm btn-dark" data-toggle="dropdown" data-target="#chat"><i class="fa fa-comment-o"></i></button>
+                                <button type="button" title="Contacts" class="btn btn-icon btn-sm btn-dark" data-toggle="dropdown" data-target="#invite"><i class="fa fa-facebook"></i></button>
+                              </div>-->
+                            </footer>
+                        </section>
+                    </aside>
+                    <!-- /.aside -->
+			<section id="content">
+        		<section class="vbox">
+            		<section class="scrollable padder">
+    					    
+                <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#">Employee </a></li>
+                    <li><a href="#">Add All Employee Related Information.</a></li>
+                </ul>
+                <div class="m-b-md">
+                    <h3 class="m-b-none"></h3>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-sm-12">
+                        <section class="panel panel-default">
+                        <header class="panel-heading font-bold">Add All Employee Related Information.</header>
+                            <div class="panel-body">
+                                <form method="POST" action="http://127.0.0.1:8000/saveEmployee" enctype="multipart/form-data">
+                                    <input type="hidden" name="_token" value="1Se6cpviKS1Y9hQCXicleoqgPdT2p8MdXwI2Fr3e">
+                                    <div class="form-group col-lg-3">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control" placeholder="" name="employee_name" required="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Gender</label>
+                                        <select class="form-control" name="gender">
+                                            <option value="">Select Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Date of Birth</label>
+                                        <input type="text" class="datepicker-input form-control" value="" autocomplete="off" name="dob" required="" id="datepicker">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>CNIC #</label>
+                                        <input type="text" class="form-control cnic" placeholder="" name="cnic" required="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>CNIC Card Image(s)</label>
+                                        <input type="file" class="form-control" name="cnic_img[]" required="" multiple="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Designation</label>
+                                        <select class="form-control" name="designation" required="">
+                                            <option value="">Select Designation</option>
+                                            <option value="Salesman">Salesman</option>
+                                            <option value="Guard">Guard</option>
+                                            <option value="Helper">Helper</option>
+                                            <option value="Cashier">Cashier</option>
+                                            <option value="Auditor">Auditor</option>
+                                            <option value="IT">IT</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Email Address</label>
+                                        <input type="text" class="form-control" placeholder="" name="email" required="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Contact Number</label>
+                                        <input type="text" class="form-control mobile_no" placeholder="" name="mobile_no" required="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Bank Account No</label>
+                                        <input type="text" class="form-control" placeholder="" name="bank_account">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Bank Branch Code</label>
+                                        <input type="text" class="form-control" placeholder="" name="bank_code">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Bank Name</label>
+                                        <input type="text" class="form-control" placeholder="" name="bank_name" value="">
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label>Branch Name</label>
+                                        <select class="form-control" name="branch_name" required="">
+                                            <option value="">Select Branch</option>
+                                            <option value="Qadafi">Qadafi</option>
+                                            <option value="Walton">Walton</option>
+                                            <option value="DHA">DHA</option>
+                                            <option value="Eden">Eden</option>
+                                            <option value="SKB">SKB</option>
+                                            <option value="Expo">Expo</option>
+                                            <option value="Raiwind">Raiwind</option>
+                                            <option value="Bhatta Ck.">Bhatta Ck.</option>
+                                            <option value="Peco Rd.">Peco Rd.</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <label>Home Address...</label>
+                                        <textarea class="form-control" name="address" rows="2" placeholder="" style="overflow: hidden; overflow-wrap: break-word; height: 41px;"></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn btn-sm btn-success">Add Employee</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+    				</section>
+    			</section>
+			</section>
+      </section>
+      </section>
+      </section>
+
+    
+	
+<script src="http://127.0.0.1:8000/notebook/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="http://127.0.0.1:8000/notebook/js/bootstrap.js"></script>
+    <!-- App -->
+    <script src="http://127.0.0.1:8000/notebook/js/app.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/app.plugin.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/fuelux/fuelux.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/sparkline/jquery.sparkline.min.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/flot/jquery.flot.min.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/flot/jquery.flot.resize.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/flot/jquery.flot.grow.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/charts/flot/demo.js"></script>
+
+    <script src="http://127.0.0.1:8000/notebook/js/calendar/bootstrap_calendar.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/calendar/demo.js"></script>
+
+    <script src="http://127.0.0.1:8000/notebook/js/sortable/jquery.sortable.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/inputmask/dist/jquery.inputmask.bundle.js"></script>
+    <!-- <script src="http://127.0.0.1:8000/notebook/js/datatables/jquery.dataTables.min.js"></script> -->
+    <script src="http://127.0.0.1:8000/theme/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="http://127.0.0.1:8000/theme/js/data-table/data-table-act.js"></script>
+    <script src="http://127.0.0.1:8000/notebook/js/datepicker/bootstrap-datepicker.js"></script>
+    
+    <script type="text/javascript">
+                                $('.cnic').inputmask('99999-9999999-9');
+        $('.mobile_no').inputmask('+0399-9999999');
+
+        var loan_id = '';
+        var loan_month = '';
+        function resetLoanMonth(loan_month,loan_id) {
+            
+            //alert(loan_id);
+            
+            $.ajax({
+                type:'POST',
+                url:'/resetLoanMonth',
+                data: {
+                    _token: "1Se6cpviKS1Y9hQCXicleoqgPdT2p8MdXwI2Fr3e",
+                    loan_id: loan_id,
+                    loan_month: loan_month,
+                },
+                success:function(data) {
+                    location.reload();
+                }
+            });
+            
+        }
+        function resetPaidMonth(loan_month,loan_id) {
+            
+            //alert(loan_id);
+            
+            $.ajax({
+                type:'POST',
+                url:'/resetPaidMonth',
+                data: {
+                    _token: "1Se6cpviKS1Y9hQCXicleoqgPdT2p8MdXwI2Fr3e",
+                    loan_id: loan_id,
+                    loan_month: loan_month,
+                },
+                success:function(data) {
+                    location.reload();
+                }
+            });
+            
+        }
+        $('#data-table-basic').DataTable();
+        $('.mobile_no').inputmask('0399-9999999');
+        $('.cnic').inputmask('99999-9999999-9');
+        $('.datepicker-input').datepicker({
+            autoclose: true,
+            format:'yyyy-mm-dd'
+        });
+        /*$(".slim-scroll").slimScroll({
+            height: "300px",
+            color : "#0073b7",
+            alwaysVisible: true,
+            size: "8px",
+            start: 'bottom',
+            railVisible: true,
+          railColor: '#0073b7',
+          railBorderRadius: 0
+
+        }).css("width", "100%");
+
+         // update content every second
+        setInterval(function(){
+            // update slimscroll every time content changes
+            var en_bas = $('.slimscroll').slimScroll({ scrollBy: '50px' });
+        }, 10000);*/
+        $('#slim-scroll').slimScroll({ 
+            height: 'auto !important' 
+        });
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,390 @@
+body{font-family: 'Mulish', sans-serif;}
+/*=========General============*/
+@font-face {
+  font-family: CustomizedUrduFont;
+   src: url('../fonts/CustomizedUrduFont.ttf'), src: url('../fonts/CustomizedUrduFont.eot');
+   src: url('../fonts/CustomizedUrduFont.eot?#iefix') format("embedded-opentype"), 
+   url('../fonts/CustomizedUrduFont.woff') format("woff"), 
+   url('../fonts/CustomizedUrduFont.woff2') format("woff2"), 
+   url('../fonts/CustomizedUrduFont.ttf');
+ }
+ .font-urdu{
+	font-family: CustomizedUrduFont;
+	line-height:1.5;
+	letter-spacing:0;
+}
+label {margin-bottom: 8px;font-size:13px;}
+.form-control,.form-select{padding:0.75rem;}
+fieldset.scheduler-border {
+	border: 1px solid #ddd !important;
+	padding: 0 1.4em 1.4em 1.4em !important;
+	margin: 0 0 1.5em 0 !important;
+	-webkit-box-shadow:  0px 0px 0px 0px #000;
+	box-shadow:  0px 0px 0px 0px #000;
+	width:100%;
+}
+
+	legend.scheduler-border {
+		font-size: 1.1em !important;
+		font-weight: bold !important;
+		text-align: left !important;
+		width:auto;
+		border-bottom:none;
+		margin-top: -15px;
+		background: #fff;
+		padding: 0 20px;
+	}
+	input.masked,
+.shell span {
+  font-size: 16px;
+  font-family: monospace;
+  padding-right: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+/*=========Login============*/
+.bg-nav{background:#184074;}
+.navbar-brand{color:#ffffff;font-weight:bold;}
+.navbar-brand span{color:#03be63;}
+.navbar-dark .navbar-nav .nav-link{color:#ffffff;}
+.navbar-dark .navbar-nav .nav-link.active{color:#03be63;font-weight:bold;}
+.half, .half .container > .row {min-height: calc(100vh - 72px);}
+.half .bg {background-size: cover;background-position: top left;}
+.half .contents, .half .bg { width: 50%;}
+
+.login-content h3{text-transform:uppercase; color:#03be63;font-weight:bolder; margin-bottom:1rem;}
+.login-content h3 span{color:#184074;}
+.login-field{position:relative;}
+.login-field .field-icons{position:absolute;width:100%;bottom:17px; z-index:-1;}
+.login-field.form-floating>label, .login-field.form-floating>.form-control{padding:1rem 3rem;   background: transparent;}
+.btn-login{color: #fff; background-color: #03be63; border-color: #03be63;padding:10px 50px;border-radius:100px;}
+.btn-login:hover {color: #fff; background-color: #028042; border-color: #028042;}
+.login-left .btn-link{text-decoration:none; color:#101010;}
+.login-right{background-image:url(../images/bg-login.jpg); background-repeat:no-repeat;}
+.register-right{background-image:url(../images/bg-register.jpg); background-repeat:no-repeat;}
+.register-page{background-image:url(../images/bg-register.jpg); background-repeat:no-repeat;background-attachment:fixed; background-size:contain;background-position:top left;}
+
+.master-head{background-image:url(../images/bg-home.jpg); background-repeat:no-repeat;background-size:cover;background-position:top center;}
+.master-head .row{min-height:600px;}
+.mast-headings h1{color:#03be63; font-weight:800;font-size:80px; line-height:1;}
+.mast-headings h2{color:#184074; font-weight:800;font-size:80px;line-height:1; margin-bottom:24px;}
+.mast-headings h2 span{color:#184074; font-weight:600;font-size:48px;line-height:1;}
+
+.filter-section{margin: -43px 0 60px;}
+.filter-box{background:#ececec;padding:1rem;border-radius:5px;}
+.filter-field{position:relative;}
+.filter-field .form-control,.filter-field .form-select{padding:1rem 2.5rem;}
+.filter-field .form-control:focus,.filter-field .form-select:focus{box-shadow:none; border:1px solid #777;}
+.filter-field .field-icons{position:absolute;bottom:17px;}
+.btn-search{background:#03be63; border-color:#03be63; color:#fff; padding:1rem 2rem;}
+.btn-search:hover{background:#00a554; border-color:#00a554; color:#fff;}
+.footer{background-color:#61ca87; padding:15px 0; position:relative;}
+.footer-logotext{font-size:32px;color:#ffffff;font-weight:700;margin-bottom:0;}
+.footer-logotext span{font-size:32px;color:#ffffff;font-weight:normal;}
+.social-link a{color:#ffffff; display:inline-block;text-decoration:none;margin:auto 7px;}
+.btn-toggle{position:absolute; right:10px; bottom:3px;color:#141414;background:transparent; border-color:transparent;}
+.footer h6{position: relative; color:#ffffff;font-weight:bold;}
+.footer h6::after{content: ''; position: absolute; width: 30px; height: 2px; background-color: #2d9801;bottom: -5px; left: 0;}
+.footer-links .nav-link{color: #ffffff; padding-left: 0;padding-top: 0; font-size: 14px;}
+.footer-links .nav-link:hover{text-decoration:underline;}
+.footer-links .nav-link.active{text-decoration:underline;}
+.footer-links .nav-link sup{color: #ffffff; background-color: #2d9801; font-weight: normal;}
+.megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+}
+/*=====Steps===*/
+.profile-img {
+    text-align: center;
+}
+.profile-img img {
+    height: 100%;
+	display:block;
+	margin:0 auto;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -55%;
+    width: 50%;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.form-register .steps {
+	margin-bottom: 30px;
+	display: table;
+    margin: 0 auto;
+}
+.form-register .steps ul {
+    display: flex;
+    display: -webkit-flex;
+    list-style: none;
+    padding-left: 45px;
+	margin-left: 25px;
+    margin-top: 30px;
+}
+.form-register .steps li,
+.form-register .steps li.current {
+	outline: none;
+	-o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    position: relative;
+}
+.form-register .steps li .current-info {
+	display: none;
+}
+.form-register .steps li a {
+	text-decoration: none;
+	outline: none;
+	-o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+}
+.form-register .steps li a .title span {
+	display: block;
+}
+.form-register .steps li a .title .step-icon { 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #ccc;
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 70px;
+}
+.form-register .steps li a .step-icon i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.form-register .steps li .step-icon::before,
+.form-register .steps li:last-child .step-icon::after {
+	position: absolute;
+	content: "";
+	background: #e5e5e5;
+	width: 70px;
+	height: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.form-register .steps li .step-icon::before {
+	right: 100%;
+}
+.form-register .steps li:last-child .step-icon::after {
+    left: 100%;
+}
+
+.form-register .steps li.current a .step-icon,
+.form-register .steps li.current a:active .step-icon,
+.form-register .steps li.done a:active .step-icon {
+    background: #03be63;
+}
+.form-register .steps li.done a .step-icon{background:#7ed5aa;}
+.form-register .steps .current .step-icon::before,
+.form-register .steps .current:last-child .step-icon::after,
+.form-register .steps .done .step-icon::before {
+	background: #03be63;
+}
+.form-register .steps li a .step-text {
+	color: #999;
+	text-transform:uppercase;
+	font-weight: 600;
+	font-size: 11px;
+	line-height:1;
+	padding:  8px 0 8px;
+}
+.form-register .steps .current .step-text,
+.form-register .steps .done .step-text {
+	color: #333;
+}
+.form-register .content {
+    margin: 0 20px 0 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 35px 55px 55px;
+	border:2px solid #fff;
+}
+.form-register .content h2 {
+	display: none;
+}
+.form-register .content .form-total-p-1 .inner h3 {
+	padding-bottom: 13px;
+	padding-top: 0;
+}
+.form-register .content #form-total-p-3 .inner h3 {
+	padding-bottom: 5px;
+}
+.actions ul {
+    list-style: none;
+    padding-left: 0;
+    padding: 0 20px;
+    margin: 30px 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -o-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.actions ul li.disabled {
+	opacity: 0;
+}
+.actions ul li {
+	padding: 0;
+    border: none;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #03be63;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+	text-transform:uppercase;
+}
+.actions ul li:hover {
+	background: #028042;
+}
+.actions ul li:first-child {
+	background: #999;
+    margin-left: auto;
+    margin-right: 15px;
+}
+.actions ul li:first-child:hover {
+	background: #666;
+}
+.actions ul li a {
+	color: #fff;
+	text-decoration: none;
+    padding: 10px 24px;
+}
+.wizard>.steps .done a, .wizard>.steps .done a:hover, .wizard>.steps .done a:active {
+    background: #9dc8e2;
+    color: #fff;
+}
+/* Responsive */
+@media screen and (max-width: 991px) {
+	.form-register .steps ul {
+	    padding-left: 0;
+	    justify-content: space-around;
+	    -o-justify-content: space-around;
+		-ms-justify-content: space-around;
+		-moz-justify-content: space-around;
+		-webkit-justify-content: space-around;
+	}
+	.form-register .steps li{margin:0 5px;}
+	.form-register .steps li a .title {
+		text-align: center;
+	}
+	.form-register .steps li a .title .step-icon{
+		margin: 0 auto;
+	}
+	.form-register .steps li a .title .step-text{display:none;}
+	.form-register .steps li a .title:hover .step-text{display:block;position:absolute;top:-30px; color:#03be63;}
+	.form-register .steps li a .title .step-icon::before,
+	.form-register .steps li:last-child a .title .step-icon::after {
+		content: none;
+	}
+	.actions ul li:first-child {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	.form-register .steps li a .title .step-icon {
+		width: 28px;
+		height: 28px;
+		font-size: 12px;
+	}
+	.form-register .steps li a .step-text {
+		font-size: 12px;
+	}
+	.actions ul li {
+		width: 120px;
+	}
+	.actions ul li a {
+	    padding: 15px 24px;
+	}
+	.form-register .steps ul{margin-left:0;}
+	.form-register .content{padding:30px 30px 30px;margin:0;}
+}
+/*==========Home Page========*/
+
+/*==========Responsiveness========*/
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
+    }
+}
+@media (max-width: 800px){
+    
+    .mast-headings h1{font-size:36px;}
+    .mast-headings h2{font-size:36px;}
+    .mast-headings h2 span{font-size:36px;}
+	.profile-img .file{margin-top:-45%;}
+}
+@media (min-width:992px) and (max-width: 1199.98px){
+	.form-register .steps li a .title .step-icon{margin-right:40px;}
+	.form-register .steps li .step-icon::before, .form-register .steps li:last-child .step-icon::after{width:40px;}
+	.form-register .steps li a .step-text{text-align:center;}
+}
+@media (max-width: 1199.98px){
+.half .contents, .half .bg {
+    width: 100%;
+}
+}
